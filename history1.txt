@@ -1,0 +1,501 @@
+  126  ls Boring/
+  127  cd 
+  128  cd go
+  129  ls
+  130  cd src/
+  131  ls
+  132  ls ~/
+  133  source ~/goVars.sh 
+  134  ls
+  135  cd github.com/
+  136  ls
+  137  ls chapter1/
+  138  pwd
+  139  cd echeadle/
+  140  ls
+  141  cd get_programming/
+  142  ls
+  143  cat README.md 
+  144  cd Chap12/
+  145  ls
+  146  cat functions.go 
+  147  ls
+  148  cd ..
+  149  ls
+  150  atom .
+  151  ls
+  152  cd repos/
+  153  ls
+  154  cd chp-ops-infra-servers/
+  155  ls
+  156  git status
+  157  git commit -am"Testing Subnet definition in script"
+  158  git push
+  159  git status
+  160  git commit -am"checking to see if subnet translation is working"
+  161  git push
+  162  git status
+  163  git add .
+  164  git push 
+  165  git status
+  166  cit commit -am"Added get networkfacts module"
+  167  git commit -am"Added get networkfacts module"
+  168  git push
+  169  git commit -am"Fixed syntax error"
+  170  git push
+  171  git commit -am"Fixed spelling error"
+  172  git push
+  173  git commit -am"Fixed syntax error"
+  174  git push
+  175  git status
+  176  git commit -am"refining network fact gather module."
+  177  git status
+  178  git push
+  179  go version
+  180  cd repos/
+  181  ls
+  182  cd chp-ops-infra-servers/
+  183  ls
+  184  git status
+  185  git commit -am"changed ec2_vpc_subnet_facts filter from subnet to vpc"
+  186  git push
+  187  git commit -am"Added name filter to get just the private subnets"
+  188  git push
+  189  git push
+  190  git commit -am"fixed syntax error"
+  191  git push
+  192  git status
+  193  git commit -am looking for one subnet"
+  194  git commit -am "looking for one subnet"
+  195  git push
+  196  git status
+  197  git commit -am"changed aws_account to account, because it seems as though that is what the python script uses."
+  198  git push
+  199  git status
+  200  git commit -am"changed aws_account to the acc number."
+  201  git push
+  202  git status
+  203  git commit -am"Changed the var to be the one discovered by the network_facts playbook"
+  204  git push 
+  205  git add .
+  206  git status
+  207  git commit -am"added a file to do the ami lookups
+  208  "
+  209  git push
+  210  host 52.94.210.188
+  211  ssh build
+  212  exit
+  213  ssh build
+  214  cd repos
+  215  cd chp-ops-infra-servers/
+  216  ls
+  217  git status
+  218  git commit -am"testing subnet-id"
+  219  git push
+  220  git status
+  221  git commit -am"changed instance type and tracking down subnet name problem"
+  222  git commit -am"changed instance type and tracking down subnet name problem"
+  223  git status
+  224  git push
+  225  git status
+  226  git commit -am"Had an extra space in front of the debug statement"
+  227  git  push
+  228  git status
+  229  git commit -am"Sent list instead of value, changed code to return item not list"
+  230  git push
+  231  ssh build
+  232  exit
+  233  cd go/src/
+  234  ls
+  235  cd github.com/
+  236  ls
+  237  ls -la
+  238  cd echeadle/
+  239  ls
+  240  ls -la
+  241  git status
+  242  cd ../..
+  243  ls
+  244  ls -la
+  245  ls -la
+  246  ls
+  247  cd ..
+  248  ls -la
+  249  cd src
+  250  ls -la
+  251  pwd
+  252  pwd
+  253  rm -rf .git 
+  254  git status
+  255  cat .gitignore 
+  256  ls awesomeProject/
+  257  ls
+  258  ls
+  259  cd github.com/
+  260  ls
+  261  cd echeadle/
+  262  ls
+  263  git status
+  264  cd mastering_go/
+  265  ls
+  266  git status
+  267  ls
+  268  cd ..
+  269  ls
+  270  git clone https://github.com/echeadle/mastering_go.git
+  271  rm -rf mastering_go/
+  272  git clone https://github.com/echeadle/mastering_go.git
+  273  cd mastering_go/
+  274  ls
+  275  cat README.md 
+  276  ls
+  277  touch aSourceFile.go
+  278  ls
+  279  atom .
+  280  git status
+  281  git add .
+  282  git commit -am"First go program aSourceFile.go -Hello world-"
+  283  git push
+  284  ls
+  285  touch .gitignore
+  286  git add
+  287  git add .
+  288  git status
+  289  go run aSourceFile.go 
+  290  go build aSourceFile.go 
+  291  ls -l
+  292  ls -lh
+  293  ./aSourceFile 
+  294  rm aSourceFile
+  295  ls
+  296  mkdir chp-1
+  297  mv aSourceFile.go chp-1/
+  298  ls
+  299  git add .
+  300  git push moved first prog into chp folder"
+  301  git commit -am"Moved first prog into chp folder"
+  302  git push 
+  303  ls
+  304  cd chp-1/
+  305  ls
+  306  go fmt getPackage.go 
+  307  go run getPackage.go 
+  308  go get package main
+  309  import (
+  310  "fmt"
+  311  ls
+  312  source ~/goVars.sh 
+  313  go get -v github.com/mactsouk/go/simpleGitHub
+  314  go env
+  315  ssh build
+  316  cd go/src/github.com/echeadle/mastering_go/
+  317  ls
+  318  ls /etc
+  319  ls /etc/sys*
+  320  cat /etc/syslog.conf 
+  321  cat /etc/asl.conf
+  322  ls /var/log
+  323  sudo cat /var/log/system.log
+  324  cat /etc/asl.conf
+  325  ls /etc/rsyslo*
+  326  ls /var/log
+  327  ls
+  328  atom logFiles.go
+  329  touch logFiles.go
+  330  atom logFiles.go
+  331  ls
+  332  go fmt logFiles.go 
+  333  go run logFiles.go 
+  334  ls /var/log
+  335  grep 'Logging in Go!' /var/log/*
+  336  sudo grep 'Logging in Go!' /var/log/*
+  337  cat /var/log/mail.log 
+  338  sudo grep 'Logging in Go!' /var/log/*/*
+  339  sudo grep 'Logging in Go!' /var/log/*
+  340  sudo grep 'Logging in Go!' /var/log/apa
+  341  sudo grep 'Logging in Go!' /var/log/apa*
+  342  sudo grep 'Logging in Go!' /var/log/apa*
+  343  ls
+  344  cat logFiles.go 
+  345  ls
+  346  mv logFiles.go chp-1/
+  347  ls
+  348  git status
+  349  git add .
+  350  git status
+  351  git commit -am"Finished chp-1"
+  352  git push
+  353  ls
+  354  go run chp-2/gColl.go 
+  355  ls
+  356  cd chp-2/
+  357  ls
+  358  GODEBUG=gctrace=1 go run gColl.go
+  359  sudo dtrace godoc
+  360  ls
+  361  vi nodeTree.go
+  362  go fmt nodeTree.go 
+  363  cat nodeTree.go 
+  364  go tool compile -W nodeTree.go 
+  365  ls
+  366  ls
+  367  ./nodeTree.o
+  368  ls -l
+  369  ls
+  370  vim decodeJson.go
+  371  godoc -http=:8080
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd ..
+  376  ls
+  377  ls ..
+  378  cd ../..
+  379  ls
+  380  ls
+  381  ls go_sys_programming/
+  382  cd go_sys_programming/
+  383  ls
+  384  ls ip_change/
+  385  cd ip_change/
+  386  ls
+  387  go run main.go 
+  388  cat example2.go 
+  389  go run example.go 
+  390  ls
+  391  go run example2.go 
+  392  atom .
+  393  go run example2.go 
+  394  go run example2.go 
+  395  go run example2.go 
+  396  go run example2.go 
+  397  go fmt jsonDecode.go 
+  398  go run jsonDecode.go 
+  399  go run example3.go 
+  400  go run example3.go 
+  401  go run example3.go 
+  402  go run example3.go 
+  403  go run example3.go 
+  404  go run example3.go 
+  405  go run example3.go 
+  406  go run example3.go 
+  407  ssh build
+  408  ssh build
+  409  go version
+  410  go env
+  411  source goVars.sh 
+  412  go env
+  413  go
+  414  go env
+  415  ls /usr/local/Cellar/go/1.10.2/
+  416  ls /usr/local/Cellar/go/1.10.2/libexec/
+  417  vim goVars.sh 
+  418  source goVars.sh 
+  419  go env
+  420  cat goVars.sh 
+  421  cd Projects/
+  422  ls
+  423  cd aws-ip-ranges/
+  424  ls
+  425  cat README.md 
+  426  cd 
+  427  ls Documents/Projects/
+  428  cd  Documents/Projects/
+  429  cd IpRange/
+  430  ls
+  431  ls ../aws-python/
+  432  ls
+  433  cat ip-range-2018-03-02-19-46-11.json 
+  434  ls
+  435  ls
+  436  pwd
+  437  cd ..
+  438  cd ~/Pro
+  439  ls
+  440  cd
+  441  ls
+  442  cd Python/
+  443  ls
+  444  cd ..
+  445  ls
+  446  ls cambia/
+  447  ls
+  448  ls work1/
+  449  ls -R
+  450  ls
+  451  cd Projects/
+  452  ls
+  453  ls aws-ip-ranges/
+  454  ls Python_App_Dev/
+  455  rmdir Python_App_Dev/
+  456  ls Python_App_Dev/
+  457  ls
+  458  ls test/
+  459  ls web/
+  460  ls
+  461  cd ..
+  462  ls
+  463  ls Python/
+  464  cd Python/
+  465  ls
+  466  cat PythonBasics.md 
+  467  ls
+  468  ls
+  469  ls
+  470  cd ..
+  471  l
+  472  ls
+  473  ls edward/
+  474  ls cambia/
+  475  cd cambia/python/
+  476  ls
+  477  atom .
+  478  python3 ip_range_change.py 
+  479  ls ~/pyenv/
+  480  source ~/pyenv/boto3/bin/activate
+  481  python ip_range_change.py 
+  482  ls
+  483  cat README.md 
+  484  cat afile.txt 
+  485  ,sls
+  486  ls
+  487  cat README.md 
+  488  ssh build
+  489  ssh build
+  490  ssh build
+  491  cd Downloads/agent-roles
+  492  atom .
+  493  cd repos/chp-ops-infra-servers/
+  494  git status
+  495  git commit -am"Creating a working system"
+  496  git push
+  497  git status
+  498  git commit -am"Changed the var files."
+  499  git push
+  500  ls
+  501  cd Documents/Projects/
+  502  aws-cli
+  503  mkdir aws-cli
+  504  ls
+  505  cd aws-cli/
+  506  ls
+  507  touch README.md
+  508  touch startinstance.sh
+  509  atom
+  510  ls
+  511  atom .
+  512  aws-adfs
+  513  ls
+  514  source source-file.sh 
+  515  auth --profile ops
+  516  aws cli describe-instancesa
+  517  aws cli describe-instances
+  518  aws cli ec2 describe-instances
+  519  aws ec2 describe-instances
+  520  aws cli describe-instances  --profile ops
+  521  aws ecs describe-instances  --profile ops
+  522  aws ec2 describe-instances  --profile ops
+  523  aws ec2 describe-instances  --filters "Name=Name,Values=chp-ops-server*"
+  524  aws ec2 describe-instances  --filters "Name=Name,Values=chp-ops-server*" --profile ops
+  525  aws ec2 describe-instances  --filters "Name=tag:Name,Values=chp-ops-server*" --profile ops
+  526  aws ec2 describe-instances  --filters "Name=tag:Name,Values=chp-ops-server-rc-dev" --profile ops
+  527  cd ..
+  528  ls
+  529  mv aws-cli/ aws
+  530  ls
+  531  git clone git@github.com:echeadle/aws-cli.git
+  532  ls ~/.ssh
+  533  git clone -i ~/.ssh/github git@github.com:echeadle/aws-cli.git
+  534  git clone ssh://git@github.com:echeadle/aws-cli.git
+  535  aws ec2 describe-instances  --filters "Name=tag:Name,Values=chp-ops-server-rc-dev" --profile ops --query 'Reservations[*].Instances[*].[InstanceId]
+'
+  536  aws ec2 describe-instances  --filters "Name=tag:Name,Values=chp-ops-server-rc-dev" --profile ops --query 'Reservations[*].Instances[*].[InstanceId]'
+  537  auth --profile ops
+  538  aws ec2 describe-instances  --filters "Name=tag:Name,Values=chp-ops-server-rc-dev" --profile ops --query 'Reservations[*].Instances[*].[InstanceId]'
+  539  ls
+  540  mv aws aws-cli
+  541  ls
+  542  ls aws-cli/
+  543  mv aws-cli/ aws
+  544  git clone start-instances
+  545  --instance-ids <value>
+  546  [--additional-info <value>]
+  547  [--dry-run | --no-dry-run]
+  548  [--cli-input-json <value>]
+  549  [--generate-cli-skeleton <value>]
+  550  git clone git@github.com:echeadle/aws-cli.git
+  551  cd aws
+  552  atom .
+  553    eval "$(ssh-agent -s)"
+  554  ssh-add -K ~/.ssh/github
+  555  git clone git@github.com:echeadle/aws-cli.git
+  556  ls
+  557  cd ..
+  558  ls
+  559  git clone git@github.com:echeadle/aws-cli.git
+  560  ls
+  561  atom .
+  562  ls
+  563  ls
+  564  cd aws-cli/
+  565  ls
+  566  cd source-file.sh 
+  567  ls instances/
+  568  atom .
+  569  ls
+  570  ls -la
+  571  touch .gitignore
+  572  ls
+  573  ls -la
+  574  git add .
+  575  git status
+  576  git commit
+  577  git status
+  578  git push
+  579  aws ec2 start-instances --instance-ids i-0b2c7a86939138222  --dry-run
+  580  aws ec2 start-instances --instance-ids i-0b2c7a86939138222  --dry-run --profile ops
+  581  aws ec2 start-instances --instance-ids i-0b2c7a86939138222   --profile ops
+  582  aws ec2 stop-instances --instance-ids i-0b2c7a86939138222   --profile ops
+  583  aws ec2 stop-instances --generate-cli-skeleton   --profile ops
+  584  aws ec2 stop-instances --generate-cli-skeleton   --profile ops > stopFile.aws
+  585  cat stopFile.aws 
+  586  aws ec2 describe-instances  --filters "Name=tag:Name,Values=chp-ops-server-rc-dev" --profile ops --query 'Reservations[*].Instances[*].[InstanceId]
+  587  aws ec2 describe-instances  --profile ops --filters "Name=tag:Name,Values=chp-ops-server-rc-prd"  --query 'Reservations[*].Instances[*].[InstanceId]'
+  588  ls
+  589  aws ec2 stop-instances --profile ops --cli-input-json stopFile.aws --dry-run
+  590  cat stopFile.aws 
+  591  cat stopFile.aws 
+  592  mv stopFile.aws stopFile.json
+  593  aws ec2 stop-instances --profile ops --cli-input-json stopFile.json --dry-run
+  594  ls
+  595  mv stopFile.json stop.json
+  596  aws ec2 stop-instances --profile ops --cli-input-json stopFile.json --dry-run
+  597  aws ec2 stop-instances --profile ops --cli-input-json stopFile.json --dry-run
+  598  aws ec2 stop-instances --profile ops --cli-input-json stop.json --dry-run
+  599  ls 
+  600  aws ec2 stop-instances --profile ops --cli-input-json stop.json --dry-run
+  601  aws ec2 stop-instances --profile ops --cli-input-json ./stop.json --dry-run
+  602  aws ec2 stop-instances --generate-cli-skeleton   --profile ops 
+  603  aws ec2 stop-instances --profile ops --cli-input-json stop.json 
+  604  aws ec2 stop-instances --instance-ids i-0b2c7a86939138222 --generate-cli-skeleton  --profile ops
+  605  aws ec2 stop-instances --generate-cli-skeleton   --profile ops > stopFile.aws
+  606  aws ec2 stop-instances --generate-cli-skeleton   --profile ops > stopFile.json
+  607  aws ec2 stop-instances --profile ops --cli-input-json "stop.json" 
+  608  aws ec2 stop-instances --generate-cli-skeleton  output   --profile ops 
+  609  aws ec2 stop-instances --generate-cli-skeleton --output   --profile ops 
+  610  aws ec2 stop-instances --help
+  611  aws ec2 stop-instances help
+  612  aws ec2 stop-instances --profile ops --cli-input-json file://stop.json 
+  613  auth --profile ops
+  614  aws ec2 stop-instances --profile ops --cli-input-json file://stop.json 
+  615  aws ec2 stop-instances --profile ops --cli-input-json file://stop.json 
+  616  aws ec2 stop-instances --profile ops --cli-input-json file://stop.json 
+  617  aws ec2 start-instances --profile ops --cli-input-json file://stop-start.json 
+  618  aws ec2 start-instances --generate-cli-skeleton > start-inst.json
+  619  cat start-inst.json 
+  620  aws ec2 start-instances --profile ops --cli-input-json file://start-inst.json
+  621  aws ec2 start-instances --profile ops --cli-input-json file://start-inst.json --dry-run false
+  622  aws ec2 start-instances --profile ops --cli-input-json file://start-inst.json --no-dry-run
+  623  jq
+  624  history | grep describe
+  625  history > history1.txt

@@ -1,0 +1,188 @@
+{
+  "Reservations": [
+    {
+      "OwnerId": "081606171748",
+      "ReservationId": "r-082b61849d0ec6e92",
+      "Groups": [],
+      "Instances": [
+        {
+          "Monitoring": {
+            "State": "disabled"
+          },
+          "PublicDnsName": "",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "EbsOptimized": false,
+          "LaunchTime": "2018-05-04T17:24:29.000Z",
+          "PrivateIpAddress": "10.48.46.172",
+          "ProductCodes": [],
+          "VpcId": "vpc-ba4791dd",
+          "StateTransitionReason": "",
+          "InstanceId": "i-0b2c7a86939138222",
+          "EnaSupport": true,
+          "ImageId": "ami-2b4c2c53",
+          "PrivateDnsName": "ip-10-48-46-172.us-west-2.compute.internal",
+          "KeyName": "chp-ops-pipeline-100",
+          "SecurityGroups": [
+            {
+              "GroupName": "cmb-ops-services-allenv",
+              "GroupId": "sg-83cc37f9"
+            },
+            {
+              "GroupName": "chp-ops-server-dev",
+              "GroupId": "sg-6d3f1813"
+            }
+          ],
+          "ClientToken": "",
+          "SubnetId": "subnet-e67e9ebc",
+          "InstanceType": "t2.micro",
+          "NetworkInterfaces": [
+            {
+              "Status": "in-use",
+              "MacAddress": "0a:0f:e5:49:1b:7a",
+              "SourceDestCheck": true,
+              "VpcId": "vpc-ba4791dd",
+              "Description": "",
+              "NetworkInterfaceId": "eni-a487c3bd",
+              "PrivateIpAddresses": [
+                {
+                  "PrivateDnsName": "ip-10-48-46-172.us-west-2.compute.internal",
+                  "Primary": true,
+                  "PrivateIpAddress": "10.48.46.172"
+                }
+              ],
+              "PrivateDnsName": "ip-10-48-46-172.us-west-2.compute.internal",
+              "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-2e4079d5",
+                "AttachTime": "2018-05-02T20:49:15.000Z"
+              },
+              "Groups": [
+                {
+                  "GroupName": "cmb-ops-services-allenv",
+                  "GroupId": "sg-83cc37f9"
+                },
+                {
+                  "GroupName": "chp-ops-server-dev",
+                  "GroupId": "sg-6d3f1813"
+                }
+              ],
+              "SubnetId": "subnet-e67e9ebc",
+              "OwnerId": "081606171748",
+              "PrivateIpAddress": "10.48.46.172"
+            }
+          ],
+          "SourceDestCheck": true,
+          "Placement": {
+            "Tenancy": "default",
+            "GroupName": "",
+            "AvailabilityZone": "us-west-2c"
+          },
+          "Hypervisor": "xen",
+          "BlockDeviceMappings": [
+            {
+              "DeviceName": "/dev/xvda",
+              "Ebs": {
+                "Status": "attached",
+                "DeleteOnTermination": true,
+                "VolumeId": "vol-0dd709bd4eb54c092",
+                "AttachTime": "2018-05-02T20:49:15.000Z"
+              }
+            }
+          ],
+          "Architecture": "x86_64",
+          "RootDeviceType": "ebs",
+          "IamInstanceProfile": {
+            "Id": "AIPAIJOFLA7KOJPWTTPOC",
+            "Arn": "arn:aws:iam::081606171748:instance-profile/chp-ops-default-machine-allow-ops"
+          },
+          "RootDeviceName": "/dev/xvda",
+          "VirtualizationType": "hvm",
+          "Tags": [
+            {
+              "Value": "3",
+              "Key": "DataClassSit"
+            },
+            {
+              "Value": "F348",
+              "Key": "BillingId"
+            },
+            {
+              "Value": "Cloud Infrastructure",
+              "Key": "ServiceTeamName"
+            },
+            {
+              "Value": "dev",
+              "Key": "Environment"
+            },
+            {
+              "Value": "1",
+              "Key": "SSMTarget"
+            },
+            {
+              "Value": "ops",
+              "Key": "ServiceAcronym"
+            },
+            {
+              "Value": "Cloud Operations",
+              "Key": "Service"
+            },
+            {
+              "Value": "3",
+              "Key": "DataClassDev"
+            },
+            {
+              "Value": "ops",
+              "Key": "DefaultServiceAcronym"
+            },
+            {
+              "Value": "chp-ops-server-rc-dev",
+              "Key": "Name"
+            },
+            {
+              "Value": "team100",
+              "Key": "TechOwnerName"
+            },
+            {
+              "Value": "4",
+              "Key": "DataClassUat"
+            },
+            {
+              "Value": "5",
+              "Key": "DataClassPrd"
+            },
+            {
+              "Value": "DL-CloudInfrastructureServices@regence.com",
+              "Key": "TechOwnerDL"
+            },
+            {
+              "Value": "IaaS",
+              "Key": "TechOwnerDiv"
+            },
+            {
+              "Value": "Shared Services Platform",
+              "Key": "BusUnit"
+            },
+            {
+              "Value": "r611171",
+              "Key": "TechOwner"
+            },
+            {
+              "Value": "0",
+              "Key": "ServiceId"
+            },
+            {
+              "Value": "0",
+              "Key": "SecurityClass"
+            }
+          ],
+          "AmiLaunchIndex": 0
+        }
+      ]
+    }
+  ]
+}
