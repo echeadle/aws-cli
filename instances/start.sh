@@ -9,4 +9,11 @@
 
 aws ec2 start-instances --instance-ids i-0b2c7a86939138222  --dry-run
 
+aws ec2 start-instances --profile ops --cli-input-json file://start-inst.json --no-dry-run
+
+
 aws ec2 stop-instances --instance-ids i-0b2c7a86939138222   --profile ops
+
+aws ecw stop-instances --input-cli-json file:// stop-inst.json
+
+aws ec2 stop-instances --profile ops --cli-input-json file://stop-inst.json --no-dry-run

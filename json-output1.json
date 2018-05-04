@@ -1,3 +1,6 @@
+ /* aws ec2 describe-instances  --profile ops --filters "Name=tag:Name,Values=chp-ops-server-rc-dev" | jq '.' */
+
+
 {
   "Reservations": [
     {
