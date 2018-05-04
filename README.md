@@ -1,7 +1,5 @@
 # aws-cli
-Aws Cli tricks and explorations
-
-AWS Code Snip-its
+Aws Cli tricks and explorations and Code Snip-its
 
 ##Aws Utils
 
@@ -18,7 +16,6 @@ Instances
   [--dry-run | --no-dry-run]
   [--cli-input-json <value>]
   [--generate-cli-skeleton <value>]
-
 
   ## Github
   Note: The -K option is Apple's standard version of ssh-add, which stores the passphrase in your keychain for you when you add an ssh key to the ssh-agent.
