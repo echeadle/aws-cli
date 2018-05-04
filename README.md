@@ -3,7 +3,7 @@ Aws Cli tricks and explorations and Code Snip-its
 
 ##Aws Utils
 
-  ###source-file.sh - Utilities for AWS CLI
+###source-file.sh - Utilities for AWS CLI
         Copy file to root dir as a hidden file. ie cp source.sh ~/.source.sh
         Current commands:
           auth    -- Login to aws, assumes default profile
