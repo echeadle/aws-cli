@@ -6,10 +6,12 @@ IAM groups
 
 aws iam create-user --user-name tetrauser
 
-aws iam create-group  --group-name tetra-grp
+aws iam create-group --group-name tetra-grp
+aws iam detach-group-policy --policy-arn arn:aws:iam::aws:policy/AmazonEC2FullAccess --group-name tetra-grp
+aws iam delete-group --group-name tetra-grp
 
 aws iam add-user-to-group --user-name tetrauser --group-name tetra-grp
-aws iam delete-user-from-group --user-name tetrauser --group-name tetra-grp
+aws iam remove-user-from-group --user-name tetrauser --group-name tetra-grp
 
 aws iam get-group  --group-name tetra-grp
 
