@@ -73,6 +73,30 @@ arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp
 --targets Id=i-004b14b80679455c1 Id=i-07496fa2047f3762e
 
 aws elbv2 create-listener --load-balancer-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:loadbalancer/app/tetra-lb/4685a33d0a1133be \
-
+--protocol HTTP --port 80 --default-actions Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95
 
 aws elbv2 describe-load-balancers --query 'LoadBalancers[].LoadBalancerArn'
+
+{
+    "Listeners": [
+        {
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:539023142835:listener/app/tetra-lb/4685a33d0a1133be/63abc37bd00b83c6",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:539023142835:loadbalancer/app/tetra-lb/4685a33d0a1133be",
+            "Port": 80,
+            "Protocol": "HTTP",
+            "DefaultActions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95"
+                }
+            ]
+        }
+    ]
+}
+
+aws elbv2 describe-target-health --target-group-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95
+
+Deleting LoadBalancers
+
+aws elbv2 delete-load-balancers --load-balancer-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:loadbalancer/app/tetra-lb/4685a33d0a1133be
+aws elbv2 delete-target-group-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95
