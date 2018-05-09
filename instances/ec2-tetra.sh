@@ -36,4 +36,5 @@ aws ec2 allocate-address --domain vpc
 
 Terminating ec2 instances and elastic ip
 
+aws ec2 terminate-instances --instance-ids i-06e0a1f0bea9b2856 --dry-run
 aws ec2 release-address --allocation-id eipalloc-2688161a

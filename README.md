@@ -22,5 +22,6 @@ Instances
 
   If you don't have Apple's standard version installed, you may receive an error. For more information on resolving this error, see "Error: ssh-add: illegal option -- K."
 
-  #eval "$(ssh-agent -s)"
-  #ssh-add -K ~/.ssh/id_rsa
+  ## SSH Key Management
+  eval "$(ssh-agent -s)"
+  ssh-add -K ~/.ssh/id_rsa

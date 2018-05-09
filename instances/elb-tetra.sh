@@ -98,5 +98,5 @@ aws elbv2 describe-target-health --target-group-arn arn:aws:elasticloadbalancing
 
 Deleting LoadBalancers
 
-aws elbv2 delete-load-balancers --load-balancer-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:loadbalancer/app/tetra-lb/4685a33d0a1133be
-aws elbv2 delete-target-group-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95
+aws elbv2 delete-load-balancer --load-balancer-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:loadbalancer/app/tetra-lb/4685a33d0a1133be
+aws elbv2 delete-target-group --target-group-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95
