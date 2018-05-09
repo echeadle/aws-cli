@@ -17,7 +17,7 @@ VPC & SubnetId
 
 Creating an Instance
 ami id ami-a523b4dd   sg id sg-c6797cb8  subnet id  subnet-9d3e94d6
-aws ec2 run-instances --image-id ami-a523b4dd --count 1 --instance-type t2.micro --key-name keypair-tetra --security-group-ids sg-c6797cb8 --subnet-id subnet-9d3e94d6 \
+aws ec2 run-instances --image-id ami-a523b4dd --count 2 --instance-type t2.micro --key-name keypair-tetra --security-group-ids sg-c6797cb8 --subnet-id subnet-9d3e94d6 \
 --user-data "sudo apt-get install -y nginx"
 
 Elastic IP Address

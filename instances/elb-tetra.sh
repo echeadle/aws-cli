@@ -67,3 +67,12 @@ aws elbv2 create-target-group --name tetra-target-grp --protocol HTTP --port 80 
         }
     ]
 }
+
+aws elbv2 register-targets --target-group-arn \
+arn:aws:elasticloadbalancing:us-west-2:539023142835:targetgroup/tetra-target-grp/fc484b8390453c95 \
+--targets Id=i-004b14b80679455c1 Id=i-07496fa2047f3762e
+
+aws elbv2 create-listener --load-balancer-arn arn:aws:elasticloadbalancing:us-west-2:539023142835:loadbalancer/app/tetra-lb/4685a33d0a1133be \
+
+
+aws elbv2 describe-load-balancers --query 'LoadBalancers[].LoadBalancerArn'
