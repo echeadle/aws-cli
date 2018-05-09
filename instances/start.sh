@@ -15,6 +15,3 @@ aws ec2 start-instances --profile ops --cli-input-json file://start-inst.json --
 aws ec2 stop-instances --instance-ids i-0b2c7a86939138222   --profile ops
 
 aws ec2 stop-instances --profile ops --cli-input-json file://stop-inst.json --no-dry-run
-
-"i-0b2c7a86939138222"
-"i-0c82444e238875673"
