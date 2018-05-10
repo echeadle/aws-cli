@@ -13,3 +13,6 @@ aws elb create-load-balancer --load-balancer-name tetra-insternal-lb \
 
 aws elb register-instances-with-loadbalancer --load-balancer-name tetra-insternal-lb \
 --instance i-07496fa2047f3762e
+
+aws elb deregister-instances-from-loadbalancer --load-balancer-name tetra-insternal-lb \
+--instance i-07496fa2047f3762e
