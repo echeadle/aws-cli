@@ -1,4 +1,4 @@
-AWS ELB
+AWS ELBV2
 
 subnet-096156a471ca31d9b  2b
 subnet-9d3e94d6           2a
