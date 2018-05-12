@@ -5,6 +5,8 @@ aws sns create-topic --name tetra-topic
     "TopicArn": "arn:aws:sns:us-west-2:539023142835:tetra-topic"
 }
 
+aws sns list-topics
+
 aws sns subscribe --topic-arn arn:aws:sns:us-west-2:539023142835:tetra-topic  \
 --protocol email --notification-endpoint edward.cheadle@cambiahealth.com
 {
@@ -24,7 +26,7 @@ aws sns list-subscriptions
         }
     ]
 }
-
+aws sns list-subscriptions
 aws sns publish --topic-arn arn:aws:sns:us-west-2:539023142835:tetra-topic  --message "This is the first SNS message"
 {
     "MessageId": "bf6db69f-cbba-5dc5-b664-e5ef95ccdc56"
