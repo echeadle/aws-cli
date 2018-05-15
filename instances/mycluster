@@ -1,0 +1,5 @@
+Content-Type: text/x-shellscript; charset="us-ascii"
+
+#!/bin/bash
+# Set any ECS agent configuration options
+echo "ECS_CLUSTER=tetracluster" >> /etc/ecs/ecs.config

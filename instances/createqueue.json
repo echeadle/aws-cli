@@ -1,0 +1,4 @@
+createqueue.json
+{
+  "MessageRetentionPeriod": "2500"
+}
