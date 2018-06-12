@@ -1,0 +1,10 @@
+{
+    "DryRun": true,
+    "InstanceIds": [
+      "i-01037055bf9099d6e",
+      "i-0123f6d38a28f9198",
+      "i-0228ed65fa0bf7d26",
+      "i-091a90344a1f2d753"
+    ],
+    "Force": false
+}
