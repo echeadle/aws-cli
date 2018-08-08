@@ -25,3 +25,9 @@ Instances<br/>
   ## SSH Key Management<br/>
   eval "$(ssh-agent -s)"<br/>
   ssh-add -K ~/.ssh/id_rsa
+aws ec2 --profile ops describle-stale-security-groups
+aws ec2 describe-stale-security-groups --profile ops --vpc-id vpc-e561b381
+
+
+Starting instances
+ aws ec2 start-instances --profile ops --cli-input-json file://start-inst.json --no-dry-run
